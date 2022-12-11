@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+            <label for="" class="form-label">
+                <h2>All Complaints</h2>
+            </label>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Mail</th>
+                    <th scope="col">Complaints</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data">
+                    <th scope="row">{{i.name}}</th>
+                    <th scope="col">{{i.address}}</th>
+                    <th scope="col">{{i.phone}}</th>
+                    <th scope="col">{{i.mail}}</th>
+                    <th scope="col">{{i.complaint}}</th>
+                    <td></td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            
+        </div>
+    </div>
+</div>

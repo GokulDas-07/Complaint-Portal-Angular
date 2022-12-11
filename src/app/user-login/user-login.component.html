@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <label for=""  class="form-label text-center"><h2>User Login</h2></label>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Mail Id</label>
+                    <input name="mail" [(ngModel)]="mail" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label class="form-label">Password</label>
+                    <input name="password" [(ngModel)]="password" type="password"  id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                   <button (click)="readValues()" class="btn btn-success">Login</button>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <a routerLink="/" class="btn btn-primary">Admin Login</a>
+                 </div>
+                 
+            </div>
+        </div>
+    </div>
+
